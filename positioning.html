@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>positions</title>
+        <style>
+            .div1{
+            border: 2px dashed goldenrod;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            right: 50px;     
+        }
+            .div2{
+            border: 2px dotted gold;
+            position: absolute;
+            left: 50px;
+            top: 1000px;
+            right: 50px;     
+        }
+            .div3{
+            border: 2px dotted rgb(255, 0, 0);
+            position: sticky;
+            left: 1px;
+            top: 1px;
+            right: 1px;     
+            }
+            .div4{
+            border: 2px dotted rgb(246, 255, 0);
+            position: fixed;
+            left: 1px;
+            top: 1px;
+            right: 1px;     
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div2">this is relative position</div>
+       <div>  
+        <div class="div1">this is absolute position</div>
+       </div>
+        <div class="div3">this is sticky position</div>
+        <div class="div4">this is fixed position</div>
+    </body>
+</html>
