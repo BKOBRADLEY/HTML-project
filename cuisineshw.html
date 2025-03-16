@@ -1,15 +1,65 @@
 <html>
- <head>
-  <title>cuisines</title>
-  <link href="cuisines.css" rel="stylesheet">
+   <head>
+     <title>cuisines</title>
+     <style>
+       .flex-container{      
+          background-color: red;
+          display: flex;
+          padding: 50px;
+          margin: 50px;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+       .flex-item{
+          background-color: rgb(255, 183, 0);
+          font-style: italic;
+          font-family: 'Times New Roman', Times, serif;
+          margin: 50px;
+          padding: 50px;
+          font-size: larger;
+        }
+        .grid-container{
+          background-color: goldenrod;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          margin: 50px;
+          padding: 50px;
+          gap: 10px;
+        }
+        .grid-item{
+          background-color: red;
+          margin: 50px;
+          padding: 50px;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: large;
+          font-style: italic;
+        }
+        #item1{
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+        #item2{
+          grid-row-start: 4;
+          grid-row-end: 6;
+        }
+  </style>
  </head>
   <body>
-    <title>cuisines</title>
-    <h1>This is homework<br></h1>
-    <h2>for my teacher<br></h2>
-    <h3>who teaches us coding<br></h3>
-    <h4>she is kind<br></h4>
-    <h5>and runs away from us<br></h5>
-    <h6>and marks our work<br></h6>
+    <div class="flex-container">            
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item" id="item1">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item" id="item2">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+    </div>
   </body>
 </html>
