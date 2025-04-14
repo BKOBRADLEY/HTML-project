@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>DOM</title>
+        <style>
+            #division1{
+                background-color: rgb(162, 59, 108);
+                font-size: xx-large;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #heading1{
+                background-color: rgb(162, 59, 108);
+                font-size: xx-large;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            let div1=document.createElement('div');
+            div1.id="division1";
+            div1.innerHTML="HELLO JSS";
+            document.body.append(div1);
+
+            let h1=document.createElement('h1');
+            h1.id="heading1";
+            h1.innerHTML="it's good";
+            document.body.append(h1);
+        </script>
+    </body>
+</html>
