@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>change</title>
+        <style>
+            #myelement{
+                border: 1px solid #A23B6C;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>change font color of html element in js</h1>
+        <div id="myelement">hello world</div>
+        <br>
+        <button type="button" onclick="changestyle()">click me</button>
+        <script>
+            function changestyle(){
+                var element=document.getElementById("myelement")
+                element.style.color="#a23b6c"
+            }
+        </script>
+    </body>
+</html>
