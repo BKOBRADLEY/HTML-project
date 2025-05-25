@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>contact</title>
+        <style>
+            /* style inputs with type="text", select elements and textareas */
+            input[type=text], select, textarea {
+                width: 100%; /* full width */
+                padding: 12px; /* some padding */
+                border: 1px solid #ccc; /* gray border */
+                border-radius: 4px; /* rounded border */
+                box-sizing: border-box; /* make sure that padding and width stays in place */
+                margin-top: 6px; /* add a top margin */
+                margin-bottom: 16px; /* bottom margin */
+                resize: vertical; /* allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: #04aa6d;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            /* while moving the cursor over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            /* add a background color and some padding around the form */
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            .carousel{
+                background-color: rgb(162, 59, 108);
+                margin: 50px;
+            }
+            .carousel-item{
+                color: aqua;
+            }
+            ul{
+                list-style-type: none;
+                display: flex;
+            }
+            li{
+                margin-right: 25px;
+                margin-left: 25px;
+                font-size: xx-large;
+                color: blue;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            nav{
+                background-color: rgb(162, 59, 108);
+            }
+            a{
+                color: red;
+            }
+            a:hover{
+                background-color: black;
+            }
+            .footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: red;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div>
+         <nav>
+              <ul>
+                <a href="portfolio.html"><li>home</li></a>
+                <a href="contact.html"><li>contact</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="about.html"><li>about</li></a>
+                <a href="hobbies.html"><li>hobbies</li></a>
+               </ul>
+          </nav>
+     <div>
+                <section>
+                    <footer class="footer">
+                        <p>@all copy rights and permissions are reserved by BRADLEY KYLE</p>
+                    </footer>
+                </section>
+            </div>
+     </div>
+     <div class="container">
+        <form action="#">
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="first name" placeholder="your name...">
+            <label for="lname">last name</label>
+            <input type="text" id="lname" name="last name" placeholder="your last name...">
+            <label for="country">country</label>
+            <select name="country" id="country">
+                <option value="Egypt">Egypt</option>
+                <option value="U.S.A">U.S.A</option>
+                <option value="Kenya">Kenya</option>
+            </select>
+            <label for="subject">subject</label>
+            <textarea name="subject" id="subject" placeholder="write sommething..." style="height: 200px;"></textarea>
+            <input type="submit" value="submit">
+        </form>
+     </div>
+    </body>
+</html>
