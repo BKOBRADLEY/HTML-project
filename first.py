@@ -1,0 +1,17 @@
+a=144000
+print(a)
+name="BradleyKyle"
+age=9
+b=144.000
+c=True
+print(name)
+print(age)
+print(b)
+print(c)
+type(a)
+print(type(a))
+d=144
+e=000
+print("addition=",d+e)
+f="BradleyKyleOjijoAbongo"
+print(len(f))
